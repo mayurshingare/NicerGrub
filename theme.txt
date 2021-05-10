@@ -1,0 +1,51 @@
+# GRUB2 gfxmenu Linux theme
+# Nicer Grub Theme
+
+# Global Property
+title-text: "Welcome to Nicer Grub!"
+title-color: "#ffffff"
+desktop-image: "background.png"
+terminal-font: "JetBrainsMono Nerd Font Regular 18"
+
+# Show the boot menu
++ boot_menu {
+  left = 50%
+  top = 30%
+  width = 50%
+  height = 60%
+  item_color = "#ffffff"
+  item_font = "JetBrainsMono Nerd Font Regular 18"
+  selected_item_color = "#333333"
+  selected_item_font = "JetBrainsMonoExtraBold Nerd Font Regular 18"
+  item_height = 36
+  item_padding = 5
+  item_spacing = 5
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Info
++ label{
+  left = 60%
+  top = 80%
+  width = 40%
+  height = 10
+  font = "JetBrainsMonoExtraBold Nerd Font Regular 18"
+  color = "#fbfb3b"
+  text = "@KEYMAP_SHORT@"
+}
+
+
+# Show a progress bar
++ progress_bar {
+  id = "__timeout__"
+  left = 10%
+  top = 90%
+  height = 8
+  width = 80%
+  font = "JetBrainsMono Nerd Font Regular 18"
+  text_color = "#111111"
+  fg_color = "#8ab446"
+  bg_color = "#314047"
+  border_color = "#314047"
+  text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+}
