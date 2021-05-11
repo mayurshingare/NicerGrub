@@ -22,6 +22,11 @@ sudoedit /etc/default/grub
 ```vi
 GRUB_THEME="/boot/grub/themes/NicerGrub/theme.txt"
 ```
+4. Regenerate the grub.cfg file
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+5. Reboot
 
 ## Credits
 - [free background photos from pngtree.com](https://pngtree.com/free-backgrounds)
